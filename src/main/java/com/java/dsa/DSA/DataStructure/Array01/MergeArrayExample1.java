@@ -11,7 +11,7 @@ public class MergeArrayExample1 {
 		int sizeOfTheFirstArray = sc.nextInt();
 		int[] firstArray = new int[sizeOfTheFirstArray];
 		for(int i =0;i<sizeOfTheFirstArray;i++) {
-			System.out.println("Enter The Element In The Second Array");
+			System.out.println("Enter The Element In The First Array");
 			firstArray[i] = sc.nextInt();
 		}
 		System.out.println("Displaying the First Array is ");
@@ -31,6 +31,19 @@ public class MergeArrayExample1 {
 			System.out.print(secondArray[i]+ " ");
 		}
 		
+		int totalSizeofArray = sizeOfTheFirstArray+ sizeOfSecondARray;
+		int[] resultantArray = new int[totalSizeofArray];
+		for(int i=0;i<sizeOfTheFirstArray;i++) {
+			resultantArray[i] = firstArray[i];
+		}
+		System.out.println("Again Copying The data of The Second Array is ");
+		for(int j=0;j<sizeOfSecondARray;j++) {
+		resultantArray[sizeOfTheFirstArray+1] = secondArray[j];	
+		}
+		System.out.println("Afte adding the two Array is :");
+		for(int i=0;i<totalSizeofArray;i++) {
+			System.out.println(resultantArray[i]);
+		}
 		
 	}
 
