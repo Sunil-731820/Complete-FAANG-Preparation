@@ -2,7 +2,7 @@ package com.java.dsa.DSA.DataStructure.Array01;
 
 import java.util.Scanner;
 
-public class ReverseTheArray {
+public class ReverseTheArray02 {
 	
 	public static void create_Array(int[] arr , int size) {
 		System.out.println("The Given Array is ");

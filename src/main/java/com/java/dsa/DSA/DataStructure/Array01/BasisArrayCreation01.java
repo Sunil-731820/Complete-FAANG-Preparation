@@ -2,7 +2,7 @@ package com.java.dsa.DSA.DataStructure.Array01;
 
 import java.util.Scanner;
 
-public class BasisArrayCreation {
+public class BasisArrayCreation01 {
 	
 	public static void basicArrayCreations(int arr[], int size) {
 		System.out.println("printing the User Array ELement : ");
