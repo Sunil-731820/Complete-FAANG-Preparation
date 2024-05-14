@@ -19,7 +19,7 @@ public class FindDuplicateInArray {
 		}
 	}
 	
-	
+	  
 	public static void main(String[] args) {
 		System.out.println("This is the EXample of finding Duplicate Element In The Array ");
 		Scanner sc = new Scanner(System.in);
