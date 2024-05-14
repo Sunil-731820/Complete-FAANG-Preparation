@@ -15,7 +15,7 @@ public class FindDuplicateInArray {
 			else {
 				System.out.println("NO REPEATING ELEMENT FOund in Array");
 				break;
-			}
+			}    
 		}
 	}
 	
