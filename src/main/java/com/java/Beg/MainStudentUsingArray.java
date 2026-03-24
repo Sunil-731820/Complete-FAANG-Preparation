@@ -53,7 +53,7 @@ public class MainStudentUsingArray {
 				System.out.println("Enter the Student id for Deleting the data ");
 				int deletedStudentId = sc.nextInt();
 				ops.deleteStudentDatausingStudentId(deletedStudentId);
-				break;
+				break; 
 			case 6:
 				System.out.println("Below is the methods of the Sorting The data using Marks :");
 				ops.sortStudentDetailsUsingmarks();
