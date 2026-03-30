@@ -60,4 +60,32 @@ public void addContact(String name, String phone, String email) {
     }
 
 
+	public void deletePhoneBookDetails(String deletedPhone) {
+		if(head==null) {
+			System.out.println("the Phone Book Contact List is Empty :");
+			return;
+		}
+		if(head.phone.equalsIgnoreCase(deletedPhone)) {
+			head = head.next;
+			System.out.println("Contact Are Deleted ....");
+			return ;
+		}
+		
+		Contact prev = head;
+		Contact curr = head.next;
+		
+		while(curr!=null) {
+			if(curr.name.equalsIgnoreCase(deletedPhone)) {
+				prev.next = curr.next;
+				System.out.println("Contact Are Deleted ...");
+				return;
+			}
+			prev = curr;
+			curr = curr.next;
+		}
+		System.out.println("No Contact With Given phone Number ...");
+		
+	}
+
+
 }
