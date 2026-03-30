@@ -13,6 +13,7 @@ public class ContactBookApp {
 			System.out.println("CONTACT BOOK PLEASE CHOOSE ..");
 			System.out.println("Enter 1 for displaying All Contact Book Details ..");
 			System.out.println("Enter 2 for Add COntact ....");
+			System.out.println("Enter 3 for performing the Search using name");
 			choice = sc.nextInt();
 			switch (choice) {
 			case 1:
@@ -26,6 +27,11 @@ public class ContactBookApp {
 				System.out.println("ENter the EMail :");
 				String email = sc.next();
 				book.addContact(name, phone, email);
+				break;
+			case 3:
+				System.out.println("Enter the name to perform Search using NAME ..");
+				String searchname = sc.next();
+				book.searchContactUsingName(searchname);
 				break;
 			default:
 				break;

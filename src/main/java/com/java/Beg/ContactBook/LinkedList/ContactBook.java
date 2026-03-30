@@ -42,6 +42,22 @@ public void addContact(String name, String phone, String email) {
             temp = temp.next;
         }
     }
+    
+//    3 : Search COntact using Name :
+    public void searchContactUsingName(String name) {
+    	Contact temp = head;
+    	while(temp!=null) {
+    		if(name.equalsIgnoreCase(temp.name)) {
+    			System.out.println("DETAILS ARE ...");
+    			System.out.println("the name of the contact is :"+temp.name);
+    			System.out.println("the phone number of the contact is :"+temp.phone);
+    			System.out.println("the email of the contact is :"+temp.email);
+    			return;
+    		}
+    		temp = temp.next;
+    	}
+    	System.out.println("No Data Are found with Given Name ...");
+    }
 
 
 }
