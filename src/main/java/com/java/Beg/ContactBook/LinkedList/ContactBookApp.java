@@ -40,7 +40,7 @@ public class ContactBookApp {
 				book.deletePhoneBookDetails(deletedPhone);
 				break;
 			default:
-				break;
+				break; 
 			}
 		}while(choice!=0);
 	}
