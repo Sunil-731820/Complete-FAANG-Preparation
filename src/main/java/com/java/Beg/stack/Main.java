@@ -16,7 +16,8 @@ public class Main {
 		manager.redo();
 		
 		manager.undo();
-		
+		manager.redo();
+		manager.undo();
 	}
 
 }
