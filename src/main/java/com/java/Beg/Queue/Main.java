@@ -10,6 +10,7 @@ public class Main {
 		printer.addJob(new PrintJob(1, "Resume.pdf"));
 		printer.addJob(new PrintJob(2, "report.docx"));
 		printer.addJob(new PrintJob(3,"Invoice.xlsx"));
+		printer.addJob(new PrintJob(4, "DESK.docs"));
 		
 //		Printing the First Job From Queue Okay
 		printer.printJob();
